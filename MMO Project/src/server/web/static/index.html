@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+    <title>TypeFaster</title>
+    <meta charset = "UTF-8" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+</head>
+<body>
+<h1>Type Faster</h1>
+<fieldset style = "width: 900px;" >
+    <table>
+        <tr>
+            <td>
+                <label for="Sample Text">Text:</label>
+                <textarea id="Sample Text" rows="15" cols="84" readonly>
+                    </textarea>
+            </td>
+            <td>
+                <label for="Leaderboard">Leaderboard:</label>
+                <textarea id="Leaderboard" rows="15" cols="45" readonly></textarea>
+            </td>
+        </tr>
+    </table>
+    <p>
+        Username: <input id="Username" type="text" name="username" placeholder="Enter Name Here">
+        <button onclick="ParseName()">Submit</button>
+    </p>
+    <p>
+        <label>Type Here: </label>
+        <input type = "text" id = "Typed Text" style="width: 500px;" placeholder="Start Typing Here"/>
+    </p>
+</fieldset>
+<script src="game2.js"></script>
+</body>
+</html>
